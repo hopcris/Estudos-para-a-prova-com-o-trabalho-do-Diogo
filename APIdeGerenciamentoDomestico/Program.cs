@@ -14,6 +14,16 @@ builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(options =
     options.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
 });
 
+
+builder.Services.AddCors(options =>
+    options.AddPolicy("Acesso Total",
+        configs => configs
+            .AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod())
+);
+
+
 var app = builder.Build();
 
 app.MapGet("/", () => "API de Organização da Casa!!");
@@ -286,5 +296,7 @@ app.MapPut("/alterar/tarefa/{id}", async ([FromRoute] int id, [FromBody] Tarefa 
     await context.SaveChangesAsync();
     return Results.Ok(tarefaEncontrada);
 });
+
+app.UseCors("Acesso Total");
 
 app.Run();
