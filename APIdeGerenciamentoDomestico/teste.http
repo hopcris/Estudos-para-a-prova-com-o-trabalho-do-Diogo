@@ -1,0 +1,81 @@
+###Cadastrar comodo
+POST http://localhost:5227/cadastrar/comodo
+Content-Type: application/json
+
+{
+  "nome": "Cozinha",
+  "descricao": "Local para preparar alimentos"
+}
+
+###Cadastrar morador
+POST http://localhost:5227/cadastrar/morador
+Content-Type: application/json
+
+{
+  "nome": "Cristiano",
+  "cpf": "12345678900"
+}
+
+###Cadastrar tarefa
+POST http://localhost:5227/cadastrar/tarefa
+Content-Type: application/json
+
+{
+  "nome": "Limpar chao",
+  "descricao": "Aspirar e passar pano",
+  "comodoId": 1
+}
+
+###Listar comodos
+GET http://localhost:5227/listar/comodos
+
+###Listar tarefas
+GET http://localhost:5227/listar/tarefas
+
+###Listar moradores
+GET http://localhost:5227/listar/moradores
+
+###Listar tarefas concluidas
+GET http://localhost:5227/listar/tarefas-concluidas
+
+###Concluir tarefa
+POST http://localhost:5227/tarefa/concluir/1/1
+
+###Deletar tarefa
+DELETE http://localhost:5227/deletar/tarefa/2
+
+###Deletar comodo
+DELETE http://localhost:5227/deletar/comodo/2
+
+###Deletar morador
+DELETE http://localhost:5227/deletar/morador/12345678900/Cristiano
+
+###Procurar morador
+GET http://localhost:5227/procurar/morador/12345678900/Cristiano
+
+###Alterar morador
+PUT http://localhost:5227/alterar/morador/12345678900/Cristiano
+Content-Type: application/json
+
+{
+  "nome": "Cristiano Hopfer",
+  "cpf": "12345678900"
+}
+
+###Alterar comodo
+PUT http://localhost:5227/alterar/comodo/1
+Content-Type: application/json
+
+{
+  "nome": "Sala",
+  "descricao": "Sala de estar"
+}
+
+###Alterar tarefa
+PUT http://localhost:5227/alterar/tarefa/2
+Content-Type: application/json
+
+{
+  "nome": "Passar pano",
+  "descricao": "Limpar o chão"
+}

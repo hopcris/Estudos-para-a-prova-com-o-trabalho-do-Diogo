@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIdeGerenciamentoDomestico", "APIdeGerenciamentoDomestico.csproj", "{582118E6-C8AB-883F-2C45-7A9ADFE693EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{582118E6-C8AB-883F-2C45-7A9ADFE693EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{582118E6-C8AB-883F-2C45-7A9ADFE693EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{582118E6-C8AB-883F-2C45-7A9ADFE693EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{582118E6-C8AB-883F-2C45-7A9ADFE693EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD84BCC3-C594-4B6F-B2FF-CD4D6B8E2BE3}
+	EndGlobalSection
+EndGlobal
